@@ -16,33 +16,26 @@
 
 <html>
 <body>
-    <div id="contact">
-        <form name="contact" method="POST" action="/" data-netlify="true">
-            <p>
-              <label>Your Name: <input type="text" name="name" /></label>   
-            </p>
-            <p>
-              <label>Your Email: <input type="email" name="email" /></label>
-            </p>
-            <p>
-              <label>Your Role: <select name="role[]" multiple>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select></label>
-            </p>
-            <p>
-              <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-              <button type="submit">Send</button>
-            </p>
-          </form>
-    </div>
-   
-    <!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/jakebal/30min" style="min-width:320px;height:630px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js"></script>
-<!-- Calendly inline widget end -->
+
+    <figure class="css-chart" style="--widget-size: 200px;">
+        <ul class="line-chart">
+            <li>
+            <div class="data-point" data-value="25"></div>
+            </li>
+            <li>
+            <div class="data-point" data-value="60"></div>
+            </li>
+            <li>
+            <div class="data-point" data-value="45"></div>
+            </li>
+            <li>
+            <div class="data-point" data-value="50"></div>
+            </li>
+            <li>
+            <div class="data-point" data-value="40"></div>
+            </li>
+        </ul>
+        </figure>
 
 </body>
 </html>
