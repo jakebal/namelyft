@@ -6,11 +6,6 @@
   
 
 /* The parent element */
-
-:root {
-    --widget-size: 200px;
-}
-
 .css-chart {
     /* The chart borders */
     border-bottom: 1px solid;
