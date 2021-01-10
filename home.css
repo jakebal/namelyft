@@ -25,22 +25,57 @@ body
     z-index: 1;
 }
 
-.grid-line
+.grid-line-horizontal
 {
     position: absolute;
-    width: 550px;
-    
-    left: 0;
+    width: 570px;
     height: 2px;
     background-color: rgb(43, 39, 52);
     z-index: -1;
+    left: 0;
+}
+
+.grid-line-vertical
+{
+    position: absolute;
+    height: 205px;
+    width: 1px;
+    
+    background-color: rgb(43, 39, 52);
+    z-index: -1;
+    top: 0px;
+}
+
+.grid-line-h0
+{
+    top: 24.3%;
+}
+.grid-line-h1
+{
+    top: 63%;
 }
 
 .grid-line-v0
 {
-    top: 60px;
+    left: 11%;
 }
+
 .grid-line-v1
 {
-    top: 120px;
+    left: 35%;
+}
+
+.grid-line-v2
+{
+    left: 57%;
+}
+
+.grid-line-v3
+{
+    left: 81%;
+}
+
+.grid-line-v4
+{
+    left: 105%;
 }
