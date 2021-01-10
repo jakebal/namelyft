@@ -155,16 +155,8 @@ function lerp(a, b, t) {
     return a + t * (b - a);
 }
 
-function getMousePos(canvas, evt) {
-    var rect = canvas.getBoundingClientRect();
-    return {
-      x: evt.clientX - rect.left,
-      y: evt.clientY - rect.top
-    };
-}
-
-c.addEventListener("click", function(){
-    alert("TEST");
+c.addEventListener('mousemove', e => {
+    alert("hi");
   });
 
 function loop() {
