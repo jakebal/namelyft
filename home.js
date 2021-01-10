@@ -5,11 +5,13 @@ var height = c.height;
 
 
 
-var gradient = ctx.createLinearGradient(0,0, 0,320);
+var gradient = ctx.createLinearGradient(0,0, 320,0);
 
 // Add three color stops
-gradient.addColorStop(0, 'rgb(233,180,10)');
-gradient.addColorStop(0.5, 'rgb(101,80,10)');
+gradient.addColorStop(0.0, 'rgb(216, 216, 66)');
+gradient.addColorStop(0.5, '#35bdef');
+
+gradient.addColorStop(1.0, 'rgb(82, 225, 117)');
 
 ctx.shadowColor = 'rgba(0, 0, 0, .45)';
 ctx.shadowBlur = 10;
@@ -138,7 +140,7 @@ function drawChart()
         ctx.lineTo(15 * i +5, height - lerp(fromToBar[i][0], fromToBar[i][1], t));
         ctx.stroke();
     }
-    
+
     ctx.shadowColor = 'rgba(0, 0, 0, .45)';
     ctx.beginPath();
     ctx.strokeStyle = gradient;
