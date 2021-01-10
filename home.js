@@ -13,12 +13,12 @@ ctx.shadowColor = 'rgba(0, 0, 0, .45)';
 ctx.shadowBlur = 10;
 ctx.shadowOffsetX = 0;
 ctx.shadowOffsetY = 8;
-
+console.log(width + ", " + height)
 var y = 1 - 0.0;
 
 var t = 0
 
-var fromTo = [
+var fromToLine = [
     [0,0.92,0.81],
     [0.043,0.97,0.81],
     [0.068,0.96,0.721],
@@ -69,18 +69,30 @@ function drawChart()
     ctx.clearRect(0, 0, width, height);
 
     ctx.beginPath();
+    ctx.strokeStyle = "#2e2a37";
+    ctx.lineWidth = 8;
+    ctx.shadowColor = 'rgba(0, 0, 0,0)';
+    for(let i = 0; i < 50; ++i)
+    {
+        ctx.moveTo(15 * i +5, height - 30);
+        ctx.lineTo(15 * i +5, height);
+        ctx.stroke();
+
+    }
+    ctx.shadowColor = 'rgba(0, 0, 0, .45)';
+    ctx.beginPath();
     ctx.strokeStyle = gradient;
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     ctx.lineWidth = 3;
 
-    for(let i = 0; i < fromTo.length; ++i)
-        ctx.lineTo(fromTo[i][0] * width, lerp(fromTo[i][1]*height,fromTo[i][2]*height, t))
+    for(let i = 0; i < fromToLine.length; ++i)
+        ctx.lineTo(fromToLine[i][0] * width, lerp(fromToLine[i][1]*height,fromToLine[i][2]*height, t))
     
-    
-
     ctx.stroke();
     
+
+
     t += 0.007
     if(t >= 1)
     t = 1
