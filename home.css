@@ -4,7 +4,11 @@
     box-sizing: border-box;
 }
   
-
+.container
+{
+    margin: 0 auto;
+    max-width: 1400px;
+}
 /* The parent element */
 body
 {
@@ -57,11 +61,21 @@ body
     flex-direction: row;
     position: relative;
     width: 100%;
-    padding: 200px;
+    padding: 200px 0px;
 }
 .hero-main-text-wrapper
 {
     display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.hero-main-text-top-sub
+{
+    color: rgba(244, 240, 252, 0.556);
 }
 #hero-widgets
 {
@@ -75,8 +89,8 @@ body
     position: absolute;
     width: auto;
     height: auto;
-    left: 50px;
-    top: 50px;
+    left: 0px;
+    top: 0px;
     background-color: #27232f;
     box-shadow: rgba(24, 21, 31, 0.582) 20px 20px 20px -5px;
     z-index: -2;
