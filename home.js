@@ -113,14 +113,27 @@ var fromToBar = [
 
 function drawChart()
 {
+    let tx = mcx / width;
+    let p = 0, p1 = 0, p2 = 0;
+
     ctx.clearRect(0, 0, width, height);
 
-    ctx.beginPath();
-    ctx.strokeStyle = "#2e2a37";
-    ctx.lineWidth = 8;
-    ctx.shadowColor = 'rgba(0, 0, 0,0)';
+    
     for(let i = 0; i < fromToBar.length; ++i)
     {
+        ctx.beginPath();
+        ctx.lineWidth = 8;
+        ctx.shadowColor = 'rgba(0, 0, 0,0)';
+        ctx.lineCap = "square";
+        if(Math.abs(mcx - (15 * i +5)) < 8 )
+        {
+            ctx.strokeStyle = "rgb(133,100,10)";
+        }
+        else
+        {
+            ctx.strokeStyle = "#2e2a37";
+        }
+
         ctx.moveTo(15 * i +5, height);
         ctx.lineTo(15 * i +5, height - lerp(fromToBar[i][0], fromToBar[i][1], t));
         ctx.stroke();
@@ -138,10 +151,17 @@ function drawChart()
     
     ctx.stroke();
     
+    
     if(overChart)
     {
-        let tx = mcx / width;
-        let p = 0, p1 = 0, p2 = 0;
+        
+
+        ctx.beginPath();
+        ctx.moveTo(mcx, 0);
+        ctx.lineTo(mcx, height);
+        ctx.lineWidth = 0.5;
+        ctx.stroke();
+        ctx.lineWidth = 3;
         for(let i = 0; i < fromToLine.length; ++i)
         {
             if(tx>fromToLine[i][0])
