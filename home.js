@@ -6,8 +6,8 @@ var height = c.height;
 var gradient = ctx.createLinearGradient(0,0, 0,320);
 
 // Add three color stops
-gradient.addColorStop(0, 'rgb(233,180,18)');
-gradient.addColorStop(1, 'rgb(101,80,10)');
+gradient.addColorStop(0, 'rgb(233,180,10)');
+gradient.addColorStop(0.5, 'rgb(101,80,10)');
 
 ctx.shadowColor = 'rgba(0, 0, 0, .45)';
 ctx.shadowBlur = 10;
@@ -44,6 +44,7 @@ var fromTo = [
     [0.446,1,0.487],
     [0.505,1,0.341],
     [0.518,1,0.175],
+    [0.528,1,0.165],
     [0.54,1,0.175],
     [0.558,1,0.331],
     [0.604,1,0.424],
