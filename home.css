@@ -35,6 +35,29 @@ body
     left: 0;
 }
 
+.dashed-grid-line-horizontal-0
+{
+    position: absolute;
+    width: 570px;
+    z-index: -1;
+    left: 0;
+    top: 38.3%;
+
+    border-bottom: 2px dashed rgb(43, 39, 52) ;
+}
+
+.dashed-grid-line-horizontal-1
+{
+    position: absolute;
+    width: 570px;
+ 
+
+    z-index: -1;
+    left: 0;
+    top: 48.3%;
+    border-bottom: 2px dashed rgb(43, 39, 52) ;
+}
+
 .grid-line-vertical
 {
     position: absolute;
