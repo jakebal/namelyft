@@ -138,12 +138,32 @@ function drawChart()
     
     ctx.stroke();
     
-
+    if(overChart)
+    {
+        let tx = mcx / width;
+        let p = 0, p1 = 0, p2 = 0;
+        for(let i = 0; i < fromToLine.length; ++i)
+        {
+            if(tx>fromToLine[i][0])
+            {
+                p2 = lerp(fromToLine[i][2], fromToLine[i + 1][2], (tx-fromToLine[i][0])/(fromToLine[i+1][0]-fromToLine[i][0]))
+                p1 = lerp(fromToLine[i][1], fromToLine[i + 1][1], (tx-fromToLine[i][0])/(fromToLine[i+1][0]-fromToLine[i][0]))
+                p = lerp(p1, p2, t)
+            }
+        }
+        ctx.shadowColor = 'rgba(0, 0, 0,0)';
+        ctx.beginPath();
+        ctx.arc(mcx, p * height, 5, 0, 2 * Math.PI);
+        ctx.stroke()
+        ctx.fillStyle = '#27232f';
+        ctx.fill();
+    }
 
     t += 0.007
     if(t >= 1)
     t = 1
 }
+
 
 function fade(t)
 {
@@ -155,9 +175,30 @@ function lerp(a, b, t) {
     return a + t * (b - a);
 }
 
-c.addEventListener('mousemove', e => {
-    alert("hi");
-  });
+var mcx = 0, mcy = 0;
+function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top
+    };
+  }
+c.addEventListener('mousemove', function(evt) {
+    var mousePos = getMousePos(c, evt);
+    mcx = mousePos.x;
+    mcy = mousePos.y;
+  
+  }, false);
+
+var overChart = false;
+
+c.addEventListener('mouseenter', function(evt) {
+    overChart = true;
+}, false);
+
+c.addEventListener('mouseleave', function(evt) {
+overChart = false;
+}, false);
 
 function loop() {
     drawChart()

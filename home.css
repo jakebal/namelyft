@@ -48,7 +48,7 @@ body
     height: 1100px;
 
     background-image: linear-gradient(to bottom, rgb(31, 29, 38), rgb(34, 31, 41));
-    z-index: -9;
+    z-index: 1;
 }
 #chart-container
 {
@@ -58,7 +58,7 @@ body
     height: auto;
     left: 50px;
     top: 50px;
-    background-color: rgb(39, 35, 47);
+    background-color: #27232f;
     box-shadow: rgba(24, 21, 31, 0.582) 20px 20px 20px -5px;
     z-index: -2;
 
@@ -141,3 +141,4 @@ body
 {
     left: 112%;
 }
+
