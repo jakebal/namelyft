@@ -137,8 +137,8 @@ function drawChart()
         ctx.moveTo(15 * i +5, height);
         ctx.lineTo(15 * i +5, height - lerp(fromToBar[i][0], fromToBar[i][1], t));
         ctx.stroke();
-
     }
+    
     ctx.shadowColor = 'rgba(0, 0, 0, .45)';
     ctx.beginPath();
     ctx.strokeStyle = gradient;
