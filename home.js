@@ -3,6 +3,8 @@ var ctx = c.getContext("2d");
 var width = c.width;
 var height = c.height;
 
+var test = document.getElementById("chart-container");
+console.log(test.width + ", " + test.height)
 var gradient = ctx.createLinearGradient(0,0, 0,320);
 
 // Add three color stops
@@ -13,7 +15,7 @@ ctx.shadowColor = 'rgba(0, 0, 0, .45)';
 ctx.shadowBlur = 10;
 ctx.shadowOffsetX = 0;
 ctx.shadowOffsetY = 8;
-console.log(width + ", " + height)
+
 var y = 1 - 0.0;
 
 var t = 0
@@ -64,6 +66,51 @@ var fromToLine = [
   
 ]
 
+var fromToBar = [
+    [10,30],
+    [10,60],
+    [10,90],
+    [10,25],
+    [10,30],
+    [10,45],
+    [10,28],
+    [10,22],
+
+    [10,30],
+    [10,60],
+    [10,40],
+    [10,25],
+    [10,30],
+    [10,45],
+    [10,18],
+    [10,22],
+
+    [10,20],
+    [10,60],
+    [10,30],
+    [10,25],
+    [10,30],
+    [10,55],
+    [10,48],
+    [10,22],
+
+    [10,30],
+    [10,60],
+    [10,90],
+    [10,25],
+    [10,30],
+    [10,45],
+    [10,28],
+    [10,22],
+
+    [10,30],
+    [10,70],
+    [10,60],
+    [10,25],
+    [10,30],
+    
+]
+
 function drawChart()
 {
     ctx.clearRect(0, 0, width, height);
@@ -72,10 +119,10 @@ function drawChart()
     ctx.strokeStyle = "#2e2a37";
     ctx.lineWidth = 8;
     ctx.shadowColor = 'rgba(0, 0, 0,0)';
-    for(let i = 0; i < 50; ++i)
+    for(let i = 0; i < fromToBar.length; ++i)
     {
-        ctx.moveTo(15 * i +5, height - 30);
-        ctx.lineTo(15 * i +5, height);
+        ctx.moveTo(15 * i +5, height);
+        ctx.lineTo(15 * i +5, height - lerp(fromToBar[i][0], fromToBar[i][1], t));
         ctx.stroke();
 
     }
