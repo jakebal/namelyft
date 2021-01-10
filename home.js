@@ -125,7 +125,7 @@ function drawChart()
         ctx.lineWidth = 8;
         ctx.shadowColor = 'rgba(0, 0, 0,0)';
         ctx.lineCap = "square";
-        if(Math.abs(mcx - (15 * i +5)) < 8 )
+        if(Math.abs(mcx - (15 * i +5)) < 8 && overChart)
         {
             ctx.strokeStyle = "rgb(133,100,10)";
         }
