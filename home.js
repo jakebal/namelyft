@@ -8,10 +8,9 @@ var height = c.height;
 var gradient = ctx.createLinearGradient(0,0, 320,0);
 
 // Add three color stops
-gradient.addColorStop(0.0, 'rgb(216, 216, 66)');
-gradient.addColorStop(0.5, '#35bdef');
-
-gradient.addColorStop(1.0, 'rgb(82, 225, 117)');
+gradient.addColorStop(0.4, 'rgb(216, 216, 66)');
+gradient.addColorStop(0.99, '#3cf6b2');
+gradient.addColorStop(1.0, '#3cf675');
 
 ctx.shadowColor = 'rgba(0, 0, 0, .45)';
 ctx.shadowBlur = 10;
@@ -120,6 +119,12 @@ function drawChart()
 
     ctx.clearRect(0, 0, width, height);
 
+    gradient = ctx.createLinearGradient(0,height, 0, 0);
+
+    // Add three color stops
+    gradient.addColorStop(0.0, '#59106b');
+    gradient.addColorStop(0.08, '#521c74');
+    gradient.addColorStop(0.2, '#521c74');
     
     for(let i = 0; i < fromToBar.length; ++i)
     {
@@ -129,17 +134,24 @@ function drawChart()
         ctx.lineCap = "square";
         if(Math.abs(mcx - (15 * i +5)) < 8 && overChart)
         {
-            ctx.strokeStyle = "rgb(133,100,10)";
+            ctx.strokeStyle = "#861886";
         }
         else
         {
-            ctx.strokeStyle = "#2e2a37";
+            ctx.strokeStyle = gradient;
         }
 
         ctx.moveTo(15 * i +5, height);
         ctx.lineTo(15 * i +5, height - lerp(fromToBar[i][0], fromToBar[i][1], t));
         ctx.stroke();
     }
+
+    gradient = ctx.createLinearGradient(0,0, 320,0);
+
+    // Add three color stops
+    gradient.addColorStop(0.4, 'rgb(216, 216, 66)');
+    gradient.addColorStop(0.99, '#3cf6b2');
+    gradient.addColorStop(1.0, '#3cf675');
 
     ctx.shadowColor = 'rgba(0, 0, 0, .45)';
     ctx.beginPath();
