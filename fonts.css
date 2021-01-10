@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-ExtraLightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-ExtraLightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url("resources/fonts/subset-Oswald-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url("resources/fonts/subset-RobotoCondensed-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url("resources/fonts/subset-Oswald-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url("resources/fonts/subset-Oswald-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url("resources/fonts/subset-Oswald-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url("resources/fonts/subset-RobotoCondensed-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url("resources/fonts/subset-Oswald-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url("resources/fonts/subset-RobotoCondensed-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url("resources/fonts/subset-RobotoCondensed-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Oswald';
+    src: url("resources/fonts/subset-Oswald-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url("resources/fonts/subset-Montserrat-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url("resources/fonts/subset-RobotoCondensed-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/subset-Roboto-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("resources/fonts/resources/fonts/subset-Roboto-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Poppins';
+    src: url("resources/fonts/subset-Poppins-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url("resources/fonts/subset-WorkSans-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto Condensed';
+    src: url("resources/fonts/subset-RobotoCondensed-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+  }
+  

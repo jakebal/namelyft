@@ -8,9 +8,35 @@
 /* The parent element */
 body
 {
-    background-color: rgb(33, 30, 39);
+    height: 200vh;
+    overflow-x: hidden;
 }
+#navbar
+{
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 800;
+}
+#nav-menu
+{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+}
+.intro-container
+{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 800px;
 
+    background-image: linear-gradient(to bottom, rgb(31, 29, 38), rgb(34, 31, 41));
+    z-index: -9;
+}
 #chart-container
 {
     display: flex;
@@ -64,7 +90,6 @@ body
     position: absolute;
     height: 100%;
     width: 1px;
-    
     background-color: rgb(43, 39, 52);
     z-index: -1;
     top: 0px;
