@@ -34,7 +34,7 @@ body
 .grid-line-horizontal
 {
     position: absolute;
-    width: 122%;
+    width: 124%;
     height: 2px;
     background-color: rgb(43, 39, 52);
     z-index: -1;
@@ -44,7 +44,7 @@ body
 .dashed-grid-line-horizontal
 {
     position: absolute;
-    width: 108%;
+    width: 115%;
     z-index: -1;
     left: 0;
     border-bottom: 2px dashed rgb(43, 39, 52) ;
@@ -72,7 +72,7 @@ body
 
 .grid-line-h0
 {
-    top: 24.3%;
+    top: 22.3%;
 }
 .grid-line-h1
 {
@@ -81,25 +81,25 @@ body
 
 .grid-line-v0
 {
-    left: 11%;
+    left: 7.2%;
 }
 
 .grid-line-v1
 {
-    left: 35%;
+    left: 31%;
 }
 
 .grid-line-v2
 {
-    left: 57%;
+    left: 55%;
 }
 
 .grid-line-v3
 {
-    left: 81%;
+    left: 82%;
 }
 
 .grid-line-v4
 {
-    left: 105%;
+    left: 112%;
 }
