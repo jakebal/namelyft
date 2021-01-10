@@ -18,6 +18,51 @@ var y = 1 - 0.0;
 
 var t = 0
 
+var fromTo = [
+    [0,1,0.81],
+    [0.043,1,0.81],
+    [0.068,1,0.721],
+    [0.09,1,0.721],
+    [0.123,1,0.595],
+    [0.16,1,0.595],
+    [0.178,1,0.697],
+    [0.189,1,0.697],
+    [0.2,1,0.595],
+    [0.226,1,0.273],
+    [0.235,1,0.273],
+    [0.250,1,0.536],
+    [0.263,1,0.536],
+    [0.279,1,0.357],
+    [0.294,1,0.357],
+    [0.312,1,0.517],
+    [0.353,1,0.594],
+    [0.386,1,0.512],
+    [0.4,1,0.512],
+    [0.415,1,0.429],
+    [0.424,1,0.429],
+    [0.439,1,0.487],
+    [0.446,1,0.487],
+    [0.505,1,0.341],
+    [0.518,1,0.175],
+    [0.54,1,0.175],
+    [0.558,1,0.331],
+    [0.604,1,0.424],
+    [0.624,1,0.595],
+    [0.670,1,0.595],
+    [0.758,1,0.278],
+    [0.764,1,0.278],
+    [0.793,1,0.341],
+    [0.819,1,0.341],
+    [0.843,1,0.409],
+    [0.85,1,0.409],
+    [0.89,1,0.258],
+    [0.912,1,0.258],
+    [0.949,0.75,0.092],
+    [0.980,0.78,0.092],
+    [1,0.8,0],
+  
+]
+
 function drawChart()
 {
     ctx.clearRect(0, 0, width, height);
@@ -27,47 +72,12 @@ function drawChart()
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     ctx.lineWidth = 3;
-    ctx.lineTo(0.0 * width, 0.81 * height);
-    ctx.lineTo(0.043 * width, 0.81 * height);
-    ctx.lineTo(0.068 * width,0.721 *height);
-    ctx.lineTo(0.09 * width,0.721 *height);
-    ctx.lineTo(0.123 * width,0.595 *height);
-    ctx.lineTo(0.16 * width,0.595 *height);
-    ctx.lineTo(0.178 * width,0.697 *height);
-    ctx.lineTo(0.189 * width,0.697 *height);
-    ctx.lineTo(0.2 * width,0.595*height);
-    ctx.lineTo(0.226 * width,0.273*height);
-    ctx.lineTo(0.235 * width,0.273 *height);
-    ctx.lineTo(0.2505 * width,0.536 *height);
-    ctx.lineTo(0.263 * width,0.536 *height);
-    ctx.lineTo(0.279 * width,0.357 *height);
-    ctx.lineTo(0.294 * width,0.357 *height);
-    ctx.lineTo(0.312 * width,0.517 *height);
-    ctx.lineTo(0.353 * width,0.594 *height);
-    ctx.lineTo(0.386 * width,0.512 *height);
-    ctx.lineTo(0.4 * width,0.512 *height);
-    ctx.lineTo(0.415 * width,0.429 *height);
-    ctx.lineTo(0.424 * width,0.429 *height);
-    ctx.lineTo(0.439 * width,0.487 *height);
-    ctx.lineTo(0.446 * width,0.487 *height);
-    ctx.lineTo(0.505 * width,0.341 *height);
-    ctx.lineTo(0.518 * width,0.175 *height);
-    ctx.lineTo(0.54 * width,0.175 *height);
-    ctx.lineTo(0.558 * width,0.331 *height);
-    ctx.lineTo(0.604 * width,0.424 *height);
-    ctx.lineTo(0.624 * width,0.595 *height);
-    ctx.lineTo(0.670 * width,0.595 *height);
-    ctx.lineTo(0.758* width,0.278 *height);
-    ctx.lineTo(0.764 * width,0.278 *height);
-    ctx.lineTo(0.793 * width,0.341*height);
-    ctx.lineTo(0.819 * width,0.341*height);
-    ctx.lineTo(0.843 * width,0.409 *height);
-    ctx.lineTo(0.850 * width,0.409 *height);
-    ctx.lineTo(0.89 * width,0.258 *height);
-    ctx.lineTo(0.912 * width,0.258 *height);
-    ctx.lineTo(0.949 * width,lerp(0.73*height,0.092*height,t));
-    ctx.lineTo(0.980 * width,lerp(0.76*height,0.092*height, t));
-    ctx.lineTo(1 * width, lerp(0.8*height,0*height, t));
+
+    for(let i = 0; i < fromTo.length; ++i)
+        ctx.lineTo(fromTo[i][0] * width, lerp(fromTo[i][1]*height,fromTo[i][2]*height, t))
+    
+    
+
     ctx.stroke();
     
     t += 0.007
