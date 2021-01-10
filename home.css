@@ -34,7 +34,7 @@ body
 .grid-line-horizontal
 {
     position: absolute;
-    width: 570px;
+    width: 122%;
     height: 2px;
     background-color: rgb(43, 39, 52);
     z-index: -1;
@@ -44,7 +44,7 @@ body
 .dashed-grid-line-horizontal
 {
     position: absolute;
-    width: 570px;
+    width: 108%;
     z-index: -1;
     left: 0;
     border-bottom: 2px dashed rgb(43, 39, 52) ;
@@ -62,7 +62,7 @@ body
 .grid-line-vertical
 {
     position: absolute;
-    height: 205px;
+    height: 100%;
     width: 1px;
     
     background-color: rgb(43, 39, 52);
