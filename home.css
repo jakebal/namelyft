@@ -19,7 +19,7 @@ body
     width: 100%;
     color: white;
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 30px 0;
@@ -45,7 +45,7 @@ body
     display: flex;
     position: relative;
     width: 100vw;
-    height: 800px;
+    height: 1100px;
 
     background-image: linear-gradient(to bottom, rgb(31, 29, 38), rgb(34, 31, 41));
     z-index: -9;
