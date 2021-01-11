@@ -50,14 +50,14 @@ body
 .contact-us-nav-link::before
 {
     content: "";
-    background-image: linear-gradient(-260deg, orange, rgb(232, 95, 3));
+    background-image: linear-gradient(-260deg, #df4ab2, #9428bf);
     position: absolute;
     top: 0;
     left: 0;
     width: 105%;
     height: 111%;
     transform: translate(-2%, -4%);
-    border-radius: 6px;
+    border-radius: 66px;
     z-index: -1;
 }
 .contact-us-nav-link
@@ -67,7 +67,7 @@ body
     color: white;
     background-color: #6d1472;
     padding: 15px 15px;
-    border-radius: 5px;
+    border-radius: 55px;
     z-index: 4;
 }
 .intro-container
