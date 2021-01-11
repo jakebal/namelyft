@@ -65,13 +65,14 @@ body {
   align-content: center;
   flex-direction: column;
   z-index: 2;
+  color: white;
 }
 
 #home-nav-link {
   text-decoration: none;
 }
 
-#home-nav-link:visited {
+#home-nav-link:visited, #home-nav-link:link {
   color: inherit;
 }
 
@@ -79,7 +80,7 @@ body {
   text-decoration: none;
 }
 
-#solutions-nav-link:visited {
+#solutions-nav-link:visited, #solutions-nav-link:link {
   color: inherit;
 }
 
@@ -87,7 +88,7 @@ body {
   text-decoration: none;
 }
 
-#portfolio-nav-link:visited {
+#portfolio-nav-link:visited, #portfolio-nav-link:link {
   color: inherit;
 }
 
