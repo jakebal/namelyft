@@ -71,12 +71,24 @@ body {
   text-decoration: none;
 }
 
+#home-nav-link:visited {
+  color: inherit;
+}
+
 #solutions-nav-link {
   text-decoration: none;
 }
 
+#solutions-nav-link:visited {
+  color: inherit;
+}
+
 #portfolio-nav-link {
   text-decoration: none;
+}
+
+#portfolio-nav-link:visited {
+  color: inherit;
 }
 
 #contact-us-nav-link::before {

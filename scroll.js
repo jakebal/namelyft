@@ -11,12 +11,13 @@ window.addEventListener("scroll", function(event) {
     {
         navbar.classList.add("navbar-scrolled");
         contactUs.classList.add("contact-us-nav-link-scrolled");
-        navmenu.style.color = "#fff"
+        navmenu.style.color = "#56355e"
     }
     else
     {
         navbar.classList.remove("navbar-scrolled");
         contactUs.classList.remove("contact-us-nav-link-scrolled");
+        navmenu.style.color = "#fff"
     }
 });
 
