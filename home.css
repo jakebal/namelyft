@@ -43,7 +43,7 @@ body
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 50px 0px;
+    padding: 30px 0px;
     
 
     z-index: 9;
@@ -57,6 +57,8 @@ body
 #nav-menu
 {
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     list-style: none;
     text-decoration: none;
 }
@@ -64,33 +66,49 @@ body
 #nav-menu > li
 {
     padding: 0px 20px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+:root {
+--contact-border: 2px;
 }
 #contact-us-nav-link::before
 {
-    content: "";
-    background-image: linear-gradient(-260deg, #df4ab2, #9428bf);
+    content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 105%;
-    height: 111%;
-    transform: translate(-2.2%, -4.5%);
-    border-radius: 66px;
-    transition: 0.2s ease;
+    top: 0; right: 0; bottom: 0; left: 0;
     z-index: -1;
+    margin: calc(var(--contact-border) * -1) !important;
+    border-radius: inherit !important;
+    background: linear-gradient(to right, #db48b3, #982abf);
+    
 }
 #contact-us-nav-link
 {
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 90%;
+    margin: auto;
+    max-width: 22em;
     text-decoration: none;
-    color: white;
-    background-color: #6d1472;
-    transition: 0.2s ease;
-    padding: 15px 15px;
-    border-radius: 55px;
-    z-index: 4;
-    transition: 0.2s ease;
+    position: relative;
+    padding: 10% 2em;
+    box-sizing: border-box;
+  
+    border: var(--contact-border);
+    color: #FFF;
+    background: rgb(115, 13, 121);
+    background-clip: padding-box !important;
+    border: solid var(--contact-border) transparent !important;
+    border-radius: 0.3em;
 }
+
 .contact-us-nav-link-scrolled::before
 {
     
@@ -100,7 +118,7 @@ body
    
     transition: 0.2s ease;
     background-color: #ffffff !important;
-    color:rgb(98, 100, 100) !important;
+    color:rgb(84, 68, 84) !important;
     /* box-shadow: rgba(0, 0, 0, 0.378) 1px 5px 15px 1px; */
 }
 .intro-container
