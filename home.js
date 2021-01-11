@@ -240,3 +240,29 @@ function loop() {
 }
 var lastRender = 0
 window.requestAnimationFrame(loop)
+
+
+
+
+
+
+introHeader()
+function introHeader()
+{
+    var hmtSub0 = document.getElementById("hmt-sub-0");
+    var hmtSub1 = document.getElementById("hmt-sub-1");
+    var hmtSub2 = document.getElementById("hmt-sub-2");
+    hmtSub0.style.transform = "translateY(0%)";
+    hmtSub1.style.transform = "translateY(0%)";
+
+    setTimeout(function() { 
+        hmtSub2.style.transform = "translateY(0%)";
+
+    }, 700);
+   
+}
+
+function t0 ()
+{
+
+}

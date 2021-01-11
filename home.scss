@@ -170,6 +170,61 @@ $contact-border: 3px;
     width: 100%;
     padding: 200px 0px;
 }
+
+
+
+#hmt
+{
+    color: rgba(255, 255, 255, 0.892);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.5em;
+    text-transform: none;
+    word-wrap: break-word;
+    width: 600px;
+
+    .hmt-bold 
+    {
+        font-weight: 700;
+        color: rgb(255, 255, 255);
+    }
+}
+
+.hmt-sub
+{
+    position: relative;
+    display: flex;
+    overflow: hidden;
+   
+}
+#hmt-sub-0
+{ 
+    transform: translateY(-150%);
+     transition: 1.15s ease;
+}
+#hmt-sub-1
+{
+    transform: translateY(-150%);
+    transition: 1.15s ease;
+}
+#hmt-sub-2
+{
+    transform: translateY(-150%);
+   
+}
+#h-white-bar
+{
+    position: absolute;
+    height: 100px;
+    width: 200%;
+    transform: translateX(-200%);
+    animation: h-white-bar-slide 2s linear;
+    background-color: white;
+}
+@keyframes h-white-bar-slide {
+    from {transform: translateX(-200%);}
+    to {transform: translateX(200%);}
+  }
 .hero-main-text-wrapper
 {
     display: flex;
