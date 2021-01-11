@@ -27,6 +27,7 @@ body {
 
 .navbar-scrolled {
   background-color: white !important;
+  box-shadow: rgba(0, 0, 0, 0.042) 1px 5px 15px 1px;
 }
 
 #navbar {
@@ -126,7 +127,6 @@ body {
   background: #f7f7f7 !important;
   transition: 0.2s ease;
   color: #56355e !important;
-  /* box-shadow: rgba(0, 0, 0, 0.378) 1px 5px 15px 1px; */
 }
 
 .intro-container {
@@ -214,6 +214,7 @@ body {
 
 #chart-container {
   display: flex;
+  position: relative;
   width: auto;
   height: auto;
   left: 0px;

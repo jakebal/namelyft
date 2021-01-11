@@ -29,6 +29,7 @@ body
 .navbar-scrolled
 {
     background-color: white !important;
+    box-shadow: rgba(0, 0, 0, 0.042) 1px 5px 15px 1px; 
 }
 
 #navbar
@@ -149,7 +150,7 @@ $contact-border: 3px;
     //background: linear-gradient(to right, #db48b3, #982abf) !important;
     //background-color: white;
     color:#56355e !important;
-    /* box-shadow: rgba(0, 0, 0, 0.378) 1px 5px 15px 1px; */
+    
 }
 .intro-container
 {
@@ -157,7 +158,6 @@ $contact-border: 3px;
     position: relative;
     width: 100vw;
     height: 1100px;
-
     background-image: linear-gradient(to bottom, #6d1472, #40127e);
     z-index: 1;
 }
@@ -245,7 +245,7 @@ $contact-border: 3px;
 #chart-container
 {
     display: flex;
-    
+    position: relative;
     width: auto;
     height: auto;
     left: 0px;
