@@ -159,6 +159,13 @@ body {
   line-height: 2em;
 }
 
+.hero-main-text-wrapper > p {
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.829);
+  font-weight: 500;
+  text-transform: none;
+}
+
 .hero-main-text-btn-wrapper {
   display: flex;
   color: white;
@@ -166,7 +173,7 @@ body {
   text-decoration: none;
   border-radius: 0px 30px 30px 30px;
   padding: 15px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .hero-main-text-btn-wrapper:visited, .hero-main-text-btn-wrapper:link {
@@ -188,6 +195,8 @@ body {
   font-size: 40px;
   line-height: 1.5em;
   text-transform: none;
+  word-wrap: break-word;
+  width: 600px;
 }
 
 .hero-main-text > span {
