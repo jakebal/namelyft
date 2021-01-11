@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-  
+
 .container
 {
     margin: 0 auto;
@@ -12,7 +12,7 @@
 /* The parent element */
 body
 {
-    height: 200vh;
+
     overflow-x: hidden;
 }
 #navbar-wrapper
@@ -443,4 +443,93 @@ $contact-border: 3px;
     transform: translateY(-15%);
     box-shadow: rgba(0, 0, 0, 0.144) 0px 20px 60px 5px;
     z-index: 2;
+}
+
+
+//------------------------
+
+.footer-wrapper
+{
+    display: flex;
+    height: auto;
+    width: 100vw;
+    background-color: #17062c;
+    position: relative;
+    color: white;
+    font-family: "montserrat";
+    
+}
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.footer-upper
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 100%;
+    border-bottom: solid 1px #3a2b4b;
+ 
+    z-index: 9;
+
+    >div
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 20%;
+      
+    }
+}
+.footer-lower
+{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0px;
+    z-index: 9;
+}
+.lower-tile
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 20%;
+}
+.lower-tile-title
+{display: flex;
+    position: relative;
+    font-weight: 700;
+    font-size: 20px;
+}
+.lower-tile-divider
+{
+    display: flex;
+    position: relative;
+    margin-top: 18px;
+
+    width: 45px;
+    height: 4px;
+    background-image: linear-gradient(
+        to right,
+         purple, 
+         rgb(75, 0, 128) 25%,
+         rgb(75, 0, 128) 45%, 
+         rgb(81, 61, 211));
+}
+.lower-tile > p
+{
+    margin-top: 18px;
+    display: flex;
+    position: relative;
+    line-height: 1.5em;
+    font-size: 14px;
 }
