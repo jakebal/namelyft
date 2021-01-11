@@ -1,9 +1,9 @@
 var c = document.getElementById("chart");
 var ctx = c.getContext("2d");
-var width = c.width;
-var height = c.height;
-
-
+var width = c.offsetWidth;
+var height = c.offsetHeight;
+ctx.canvas.width  = width;
+ctx.canvas.height = height;
 
 var gradient = ctx.createLinearGradient(0,0, 320,0);
 
