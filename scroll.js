@@ -1,5 +1,6 @@
 
 var navbar = document.getElementById("navbar-wrapper");
+var navmenu = document.getElementById("nav-menu");
 var contactUs = document.getElementById("contact-us-nav-link");
 var scroll = 0;
 
@@ -10,7 +11,7 @@ window.addEventListener("scroll", function(event) {
     {
         navbar.classList.add("navbar-scrolled");
         contactUs.classList.add("contact-us-nav-link-scrolled");
-        
+        navmenu.style.color = "#fff"
     }
     else
     {

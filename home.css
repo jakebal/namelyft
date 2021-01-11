@@ -54,6 +54,7 @@ body {
   white-space: nowrap;
   list-style: none;
   text-decoration: none;
+  color: white;
 }
 
 #nav-menu > li {
@@ -64,6 +65,18 @@ body {
   align-content: center;
   flex-direction: column;
   z-index: 2;
+}
+
+#home-nav-link {
+  text-decoration: none;
+}
+
+#solutions-nav-link {
+  text-decoration: none;
+}
+
+#portfolio-nav-link {
+  text-decoration: none;
 }
 
 #contact-us-nav-link::before {
