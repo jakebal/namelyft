@@ -270,6 +270,35 @@ $contact-border: 3px;
       
     }
 }
+#hero-main-text-top-sub-wrapper
+{
+    display: flex;
+    flex-direction: row;
+    color: rgba(255, 255, 255, 0.529);
+}
+#establish-wrapper
+{
+    display: flex;
+    margin-right: 5px;
+    overflow: hidden;
+}
+#establish
+{
+    transform: translateX(150%);
+    transition: 0.5s;
+}
+#engage
+{
+    transform: translateX(150%);
+    padding-left: 5px;
+    transition: 0.5s;
+}
+#transform
+{
+    transform: translateX(150%);
+    padding-left: 5px;
+    transition: 0.5s;
+}
 .hero-main-text-top-sub
 {
     color: rgba(240, 240, 252, 0.556);
@@ -415,4 +444,3 @@ $contact-border: 3px;
     box-shadow: rgba(0, 0, 0, 0.144) 0px 20px 60px 5px;
     z-index: 2;
 }
-

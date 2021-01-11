@@ -253,9 +253,29 @@ function introHeader()
     var hmtSub1 = document.getElementById("hmt-sub-1");
     var hmtSub2 = document.getElementById("hmt-sub-2");
     var hWhiteBar = document.getElementById("h-white-bar");
+
+    var establish = document.getElementById("establish");
+    var engage = document.getElementById("engage");
+    var transform = document.getElementById("transform");
+
     hmtSub0.style.transform = "translateY(0%)";
     hmtSub1.style.transform = "translateY(0%)";
     hWhiteBar.style.animation = "h-white-bar-slide 2s linear";
+
+    transform.style.transform = "translateX(0%)";
+
+    setTimeout(function() { 
+        engage.style.transform = "translateX(0%)";
+
+    }, 250);
+    
+    setTimeout(function() { 
+        establish.style.transform = "translateX(0%)";
+
+    }, 500);
+
+
+
     setTimeout(function() { 
         hmtSub2.style.transform = "translateY(0%)";
 
