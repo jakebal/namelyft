@@ -15,10 +15,30 @@ body
     height: 200vh;
     overflow-x: hidden;
 }
-#navbar
+#navbar-wrapper
 {
     display: flex;
-    position: absolute;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    position: fixed;
+    z-index: 9;
+    transition: 0.2s ease;
+}
+.navbar-white
+{
+    background-color: white !important;
+}
+.navbar-default
+{
+
+}
+#navbar
+{
+    
+    display: flex;
+    position: relative;
     justify-content: space-between;
     width: 100%;
     color: white;
@@ -27,14 +47,15 @@ body
     font-weight: 600;
     text-transform: uppercase;
     padding: 50px 0px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    
+
     z-index: 9;
 }
 #logo
 {
+    display: flex;
     padding: 0px 30px;
+    
 }
 #nav-menu
 {
