@@ -186,7 +186,6 @@ body {
   height: 100px;
   width: 200%;
   transform: translateX(-200%);
-  animation: h-white-bar-slide 2s linear;
   background-color: white;
 }
 

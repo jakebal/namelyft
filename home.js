@@ -252,9 +252,10 @@ function introHeader()
     var hmtSub0 = document.getElementById("hmt-sub-0");
     var hmtSub1 = document.getElementById("hmt-sub-1");
     var hmtSub2 = document.getElementById("hmt-sub-2");
+    var hWhiteBar = document.getElementById("h-white-bar");
     hmtSub0.style.transform = "translateY(0%)";
     hmtSub1.style.transform = "translateY(0%)";
-
+    hWhiteBar.style.animation = "h-white-bar-slide 2s linear";
     setTimeout(function() { 
         hmtSub2.style.transform = "translateY(0%)";
 
