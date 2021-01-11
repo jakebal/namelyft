@@ -147,6 +147,9 @@ body {
 }
 
 #hmt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   color: rgba(255, 255, 255, 0.892);
   font-weight: 500;
   font-size: 40px;
@@ -162,6 +165,7 @@ body {
 }
 
 .hmt-sub {
+  display: flex;
   position: relative;
   display: flex;
   overflow: hidden;

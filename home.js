@@ -259,7 +259,7 @@ function introHeader()
     setTimeout(function() { 
         hmtSub2.style.transform = "translateY(0%)";
 
-    }, 700);
+    }, 750);
    
 }
 
