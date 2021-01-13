@@ -427,6 +427,14 @@ $email-input-height: 60px;
         >li
         {
             padding-left: 20px;
+            >a
+            {
+                text-decoration: none;
+            }
+            >a:visited
+            {
+                color: inherit; 
+            }
         }
     }
 }

@@ -503,6 +503,14 @@ body {
   padding-left: 20px;
 }
 
+.footer-lower > ul > li > a {
+  text-decoration: none;
+}
+
+.footer-lower > ul > li > a:visited {
+  color: inherit;
+}
+
 .footer-copyright {
   color: #818d97;
   font-size: 13px;
