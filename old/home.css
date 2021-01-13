@@ -434,6 +434,29 @@ body {
   width: 20%;
 }
 
+.media-circle-wrapper {
+  display: flex;
+  width: 40px;
+  height: 80px;
+  z-index: 10;
+}
+
+.media-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #88ca8a;
+  border-radius: 99px;
+}
+
+.media-circle-inner {
+  width: 40px;
+  height: 40px;
+  background-color: #723188;
+  border-radius: 99px;
+  transform-origin: center;
+  transform: scale(0.5);
+}
+
 .footer-lower {
   display: flex;
   position: relative;
@@ -460,14 +483,13 @@ body {
 .lower-tile-divider {
   display: flex;
   position: relative;
-  margin-top: 18px;
+  margin: 18px 0px;
   width: 45px;
   height: 4px;
   background-image: linear-gradient(to right, purple, #4b0080 25%, #4b0080 45%, #513dd3);
 }
 
 .lower-tile > p {
-  margin-top: 18px;
   display: flex;
   position: relative;
   line-height: 1.5em;

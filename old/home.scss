@@ -488,6 +488,33 @@ $contact-border: 3px;
       
     }
 }
+
+.media-circle-wrapper
+{
+    display: flex;
+    width: 40px;
+    height: 80px;
+    //background-color: rgb(202, 136, 136);
+    
+    z-index: 10;
+}
+.media-circle
+{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(136, 202, 138);
+    border-radius: 99px;
+    //border-radius: 99px;
+}
+.media-circle-inner
+{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(114, 49, 136);
+    border-radius: 99px;
+    transform-origin: center;
+    transform: scale(0.5);
+}
 .footer-lower
 {
     display: flex;
@@ -514,7 +541,7 @@ $contact-border: 3px;
 {
     display: flex;
     position: relative;
-    margin-top: 18px;
+    margin: 18px 0px;
 
     width: 45px;
     height: 4px;
@@ -527,7 +554,6 @@ $contact-border: 3px;
 }
 .lower-tile > p
 {
-    margin-top: 18px;
     display: flex;
     position: relative;
     line-height: 1.5em;
