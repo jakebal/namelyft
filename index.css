@@ -23,6 +23,7 @@ body
 {
     max-width: 1000px;
     max-height: 1000px;
+    width: 800px;
     background-color: rgba(38, 60, 70, 0.57);
     border-radius: 9px;
     backdrop-filter: blur(15px);
@@ -34,6 +35,7 @@ body
 {
     display: flex;
     justify-content: center; 
+    padding: 30px;
 }
 
 .logo-wrapper img
@@ -51,7 +53,7 @@ body
     font-family: "montserrat";
     color: rgba(231, 238, 242, 0.849);
     padding: 10px 30px;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
 }
@@ -76,8 +78,8 @@ body
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-            margin: 60px auto;
-    width: 90%;
+            margin: 40px auto;
+    width: 50%;
   }
   
   .footer-email-wrapper > input:-webkit-autofill,
@@ -164,7 +166,7 @@ body
             transform: translateY(-50%);
     
   }
-  input, button, submit { border:none; } 
+  button, submit { border:none;cursor: pointer; } 
   .email-footer-svg-check {
     fill: white;
     -ms-flex-item-align: center;
@@ -176,6 +178,7 @@ body
     width: 32px;
     height: 32px;
     margin: auto;
+    
   }
 
   .prompt
@@ -183,7 +186,7 @@ body
     
     font-family: "montserrat";
     color: rgba(231, 238, 242, 0.849);
-    padding: 30px 30px 100px 30px;
+    padding: 0px 30px 60px 30px;
     font-size: 14px;
     font-weight: 700;
     text-align: center;
