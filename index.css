@@ -162,8 +162,9 @@ body
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    
   }
-  
+  input, button, submit { border:none; } 
   .email-footer-svg-check {
     fill: white;
     -ms-flex-item-align: center;
